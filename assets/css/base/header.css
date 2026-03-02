@@ -1,0 +1,41 @@
+body {
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px;
+  margin-bottom: 32px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header__item {
+  display: inline-flex;
+}
+
+.header__link {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--black);
+  text-decoration: none;
+  cursor: url("../../img/icons/pokebola.png"), pointer;
+  transition: all 0.3s ease-in-out;
+}

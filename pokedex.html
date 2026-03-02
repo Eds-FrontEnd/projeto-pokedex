@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore a Pokédex online com lista completa de Pokémon, busca por nome e navegação paginada. Projeto desenvolvido em HTML5, CSS3 e JavaScript.">
+    <meta name="keywords" content="Pokémon, Pokédex, lista de Pokémon, busca Pokémon, HTML5, CSS3, JavaScript">
+    <meta name="author" content="Edson Alves">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#fff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pokédex Online - Lista Completa de Pokémon">
+    <meta property="og:description" content="Busque Pokémon pelo nome e navegue pela Pokédex online completa.">
+    <meta property="og:image" content="assets/img/logo/pokemon-logo.svg">
+    <meta property="og:url" content="https://seudominio.com/">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pokédex Online - Lista Completa de Pokémon">
+    <meta name="twitter:description" content="Busque Pokémon pelo nome e navegue pela Pokédex online completa.">
+    <meta name="twitter:image" content="assets/img/logo/pokemon-logo.svg">
+
+    <title>Pokédex Online | Lista Completa de Pokémon</title>
+
+    <!-- Fonte - Inter - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Fonte - DM Sans - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon/pokebola.ico" type="image/x-icon">
+
+    <!-- Estilos - CSS3 -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base/pokedex.css">
+
+    <!-- Responsive - CSS3 -->
+    <link rel="stylesheet" href="assets/css/base/responsive.css">
+
+</head>
+
+<body>
+    <main class="layout">
+        <header class="header">
+            <a href="/" class="header__logo">
+                <img src="assets/img/logo/pokemon-logo.svg" alt="Logo Pokémon" width="124" height="39">
+            </a>
+
+            <nav class="header__nav" aria-label="Menu principal">
+                <ul class="header__item--mobile">
+                    <li>
+                        <a href="/" class="header__link">
+                            <img src="assets/img/icons/prev.svg" alt="voltar para página principal" aria-hidden="true">
+                            Voltar
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__list">
+                    <button class="header__menu--icon header__menu--close" aria-label="Fechar pesquisar Pokémon">
+                        <img src="assets/img/icons/close.svg" alt="Fechar pesquisar Pokémon" aria-hidden="true">
+                    </button>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item pokedex">
+                        <a href="pokedex.html" class="header__link">Pokédex</a>
+                    </li>
+                    <li class="header__item--mobile">
+                        <a href="/" class="header__link">
+                            <img src="assets/img/icons/prev.svg" alt="voltar para página principal" aria-hidden="true">
+                            Voltar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2 class="hero__title">O que é uma Pokédex?</h2>
+            <p class="hero__text">
+                A Pokédex é uma enciclopédia digital do universo Pokémon.
+                Criada para catalogar espécies, registrar habitats,
+                habilidades e evoluções, ela é essencial para treinadores
+                que desejam se tornar mestres Pokémon.
+            </p>
+            <p class="hero__text">
+                Criado no Japão na década de 1990, Pokémon se tornou uma das maiores
+                franquias do mundo, com jogos, séries, filmes e cartas colecionáveis.
+                A Pokédex evolui a cada geração, acompanhando novos Pokémon e regiões.
+                Esses são alguns dos iniciais Pokémons Icônicos:
+            </p>
+        </section>
+
+        <section class="pokemon">
+            <div class="pokemon__grid">
+                <article class="pokemon-card">
+                    <img class="pokemon-card__image" src="assets/img/pokemon/pokemon_bulbasaur.png"
+                        alt="Imagem oficial do Pokémon Bulbasaur" width="96" height="96">
+                    <h3 class="pokemon-card__title">Bulbasaur</h3>
+                    <p class="pokemon-card__description">
+                        Tipo Planta/Veneno. Carrega uma semente em suas costas
+                        que cresce conforme evolui.
+                    </p>
+                </article>
+
+                <article class="pokemon-card">
+                    <img class="pokemon-card__image" src="assets/img/pokemon/pokemon_charmander.png"
+                        alt="Imagem oficial do Pokémon Charmander" width="96" height="96">
+                    <h3 class="pokemon-card__title">Charmander</h3>
+                    <p class="pokemon-card__description">
+                        Tipo Fogo. Sua chama indica sua força vital.
+                        Evolui para o poderoso Charizard.
+                    </p>
+                </article>
+
+                <article class="pokemon-card">
+                    <img class="pokemon-card__image" src="assets/img/pokemon/pokemon_squirtle.png"
+                        alt="Imagem oficial do Pokémon Squirtle" width="96" height="96">
+                    <h3 class="pokemon-card__title">Squirtle</h3>
+                    <p class="pokemon-card__description">
+                        Tipo Água. Usa sua carapaça como defesa e
+                        dispara jatos de água de alta pressão.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            © <span class="year"></span> - Pokédex Online - Projeto feito com dedicação. 🚀
+        </p>
+    </footer>
+    <!-- Script JS -->
+    <script src="assets/js/modules/year.js" defer type="module"></script>
+</body>
+
+</html>

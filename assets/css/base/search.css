@@ -1,0 +1,52 @@
+.search {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search.active {
+  display: flex;
+  z-index: 110;
+}
+
+.search__field {
+  width: 90%;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 10px 24px;
+  background-color: var(--gray-light);
+  border-radius: 50px;
+}
+
+.search__input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.search__icon {
+  width: 20px;
+  height: 20px;
+  cursor: url("../../img/icons/pokebola.png"), pointer;
+}
+
+.search__btn {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

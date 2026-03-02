@@ -1,0 +1,139 @@
+@media screen and (min-width: 385px) {
+  .header__menu--icon {
+    display: none;
+    cursor: url("../img/icons/pokebola.png"), pointer;
+  }
+
+  .home,
+  .pokedex {
+    background-color: var(--gray-light);
+    border-radius: 8px;
+  }
+
+  .search__title {
+    display: none;
+  }
+
+  .search__btn {
+    display: none;
+  }
+
+  .header__item--mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .header__list {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .header__nav {
+    padding-left: 24px;
+  }
+
+  .header__item--mobile {
+    display: flex;
+  }
+  .header .header__item--mobile .header__link {
+    display: flex;
+    transform: none;
+    gap: 8px;
+  }
+
+  .header__menu--close,
+  .header__search--close {
+    display: flex;
+    position: fixed;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .search__title {
+    position: absolute;
+    top: 110px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .search__field {
+    min-width: 270px;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-light);
+    border-radius: 0;
+    z-index: 100;
+  }
+
+  .search__input {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 2px solid var(--black);
+  }
+
+  .search__input::placeholder {
+    color: transparent;
+    opacity: 0;
+  }
+
+  .header__link:hover {
+    transform: scale(1.5);
+    outline: none;
+  }
+
+  .header__link.home,
+  .header__link.pokedex {
+    background-color: none;
+  }
+
+  .search__icon {
+    display: none;
+  }
+
+  .search__field {
+    flex-direction: column;
+  }
+
+  .search__btn {
+    display: flex;
+    position: absolute;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    right: 23px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__list {
+    display: none;
+    font-weight: 700;
+  }
+
+  .header__menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu {
+    padding: none;
+  }
+}

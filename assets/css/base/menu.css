@@ -1,0 +1,50 @@
+.header__menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: url("../img/icons/pokebola.png"), pointer;
+}
+
+.header__list.active {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-light);
+  z-index: 100;
+}
+
+.header__menu--close,
+.header__search--close {
+  position: absolute;
+  top: 40px;
+  right: 32px;
+}
+
+.header__menu--close,
+.header__search--close {
+  display: flex;
+  z-index: 110;
+}
+
+.header__menu--close,
+.header__search--close {
+  display: flex;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.header__menu--close:hover,
+.header__menu--close:focus-visible,
+.header__search--close:hover,
+.header__search--close:focus-visible {
+  transform: rotate(180deg);
+}
+
+.header__menu--icon {
+  cursor: url("../../img/icons/pokebola.png"), pointer;
+}
