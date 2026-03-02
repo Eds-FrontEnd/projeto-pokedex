@@ -33,12 +33,20 @@ Ou faça o download do arquivo `.zip`.
 
 Abra o projeto no **Visual Studio Code** e execute um servidor local.
 
-### 3️⃣ Depois acesse:
+### ▶️ Opção Recomendada: Usando o Plugin Live Preview
 
-```bash
-http://127.0.0.1:3000/index.html
-```
+Siga o passo a passo abaixo no Visual Studio Code:
 
+1. Abra o **Visual Studio Code**
+2. Clique em **Extensões** (ícone de blocos no menu lateral esquerdo)
+3. Pesquise por **Live Preview** ou algum plugin de sua preferência
+4. Instale a extensão **Live Preview (Microsoft)**
+5. Após instalar, abra o arquivo `index.html`
+6. Clique com o botão direito no arquivo
+7. Selecione **"Show Preview"** ou **"Open with Live Preview"**
+8. O servidor local será iniciado automaticamente
+9. O projeto abrirá no navegador ou na aba interna do VS Code
+10. Ou clique na opção "Open in Browser" no canto superior direito da janela do Live Preview (ícone de menu) para abrir o projeto diretamente no navegador.
 ---
 
 ⚠️ **Importante:**  
@@ -66,9 +74,8 @@ O layout é totalmente adaptável para:
 ---
 
 ## 📸 Preview
+### 🚀 Explore o projeto e divirta-se!
 
 <img src="assets/img/readme.jpg" alt="Preview do Projeto" />
 
 ---
-
-## 🚀 Explore o projeto e divirta-se!
