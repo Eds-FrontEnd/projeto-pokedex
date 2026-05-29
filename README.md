@@ -23,6 +23,7 @@ O objetivo é reproduzir a interface de um PokéDex com foco em:
 
 ```bash
 git clone https://github.com/Eds-FrontEnd/projeto-pokedex.git
+```
 
 Ou faça o download do arquivo `.zip`.
 
@@ -75,6 +76,6 @@ O layout é totalmente adaptável para:
 ## 📸 Preview
 ### 🚀 Explore o projeto e divirta-se!
 
-<img src="assets/img/readme.jpg" alt="Preview do Projeto" />
+![Preview do Projeto](./assets/img/readme.jpg)
 
 ---
