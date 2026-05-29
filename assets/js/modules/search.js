@@ -73,6 +73,10 @@ const renderSearchResults = async (query) => {
     return;
   }
 
+  if (query.length < 3) {
+    return;
+  }
+
   search.container.innerHTML = "";
 
   try {
