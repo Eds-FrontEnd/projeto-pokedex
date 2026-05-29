@@ -22,8 +22,7 @@ O objetivo é reproduzir a interface de um PokéDex com foco em:
 ### 1️⃣ Clonar ou baixar o repositório
 
 ```bash
-git clone projeto-pokedex
-```
+git clone https://github.com/Eds-FrontEnd/projeto-pokedex.git
 
 Ou faça o download do arquivo `.zip`.
 
