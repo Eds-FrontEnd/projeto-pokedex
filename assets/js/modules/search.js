@@ -1,3 +1,4 @@
+import { TYPE_MAP } from "../core/constants.js";
 import { fetchPokemon } from "../services/api.js";
 
 const search = {
@@ -22,6 +23,10 @@ const getPokemonDetails = async (pokemon) => {
   return details;
 };
 
+const getPokemonType = (type) => {
+  return TYPE_MAP[type] || type || "Desconhecido";
+};
+
 const renderSearchResults = async (query) => {
   if (!search.container) return;
 
@@ -41,7 +46,7 @@ const renderSearchResults = async (query) => {
 
       const span = document.createElement("span");
       const type = document.createElement("h3");
-      type.textContent = details.types[0]?.type.name ?? "Desconhecido";
+      type.textContent = getPokemonType(details.types[0]?.type.name);
 
       const number = document.createElement("h3");
       number.textContent = `#${details.id}`;
@@ -103,7 +108,7 @@ const renderSearchResults = async (query) => {
 
       const span = document.createElement("span");
       const type = document.createElement("h3");
-      type.textContent = pokemon.types[0]?.type.name ?? "Desconhecido";
+      type.textContent = getPokemonType(pokemon.types[0]?.type.name);
 
       const number = document.createElement("h3");
       number.textContent = `#${pokemon.id}`;
