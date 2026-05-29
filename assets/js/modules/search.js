@@ -7,7 +7,20 @@ const search = {
 };
 
 let allPokemonCache = [];
+let pokemonDetailsCache = new Map();
 let debounceTimeout = null;
+
+const getPokemonDetails = async (pokemon) => {
+  if (pokemonDetailsCache.has(pokemon.name)) {
+    return pokemonDetailsCache.get(pokemon.name);
+  }
+
+  const details = await fetch(pokemon.url).then((res) => res.json());
+
+  pokemonDetailsCache.set(pokemon.name, details);
+
+  return details;
+};
 
 const renderSearchResults = async (query) => {
   if (!search.container) return;
@@ -21,7 +34,7 @@ const renderSearchResults = async (query) => {
     const fragment = document.createDocumentFragment();
 
     for (const p of allPokemonCache.slice(0, 18)) {
-      const details = await fetch(p.url).then((res) => res.json());
+      const details = await getPokemonDetails(p);
 
       const div = document.createElement("div");
       div.className = "list__card--info";
@@ -81,7 +94,7 @@ const renderSearchResults = async (query) => {
     const fragment = document.createDocumentFragment();
 
     const details = await Promise.all(
-      filtered.map((pokemon) => fetch(pokemon.url).then((res) => res.json())),
+      filtered.map((pokemon) => getPokemonDetails(pokemon)),
     );
 
     details.forEach((pokemon) => {
